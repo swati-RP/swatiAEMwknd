@@ -7,7 +7,7 @@
         {
             "type": "java",
             "name": "Debug (Attach)",
-            "projectName": "wknd.core",
+            "projectName": "aem-guides-wknd.core",
             "request": "attach",
             "hostName": "localhost",
             "port": 8080
