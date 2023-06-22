@@ -3,29 +3,29 @@
   data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
   >
   <div class="cmp-column">
-  <div class="cmp-column-content">
-    <h2 class="cmp-column-title">${model.title}</h2>
-    <h3 class="cmp-column-subtitle">${model.subtitle}</h3>
+  <div class="cmp-column__content">
+    <h2 class="cmp-column__title">${model.title}</h2>
+    <h3 class="cmp-column__subtitle">${model.subtitle}</h3>
     <hr class="line1">
     <hr class="line2">
-    <div class="cmp-column-description">${model.description}</div>
-    <div class="cmp-column-features">
-      <ul class="cmp-column-ul"  data-sly-list.item="${model.feature}">
+    <div class="cmp-column__description">${model.description}</div>
+    <div class="cmp-column__features">
+      <ul class="cmp-column__ul"  data-sly-list.item="${model.feature}">
       <li>${item}</li>
       </ul>
     </div>
-<div class="cmp-column-new">
-  <div class="cmp-column-icon">
-    <img src="https://icon-library.com/images/white-phone-icon-png-transparent/white-phone-icon-png-transparent-3.jpg" alt="Mobile Icon" class="cmp-column-mobile-icon">
+<div class="cmp-column--new">
+  <div class="cmp-column--new__icon">
+    <img src="https://icon-library.com/images/white-phone-icon-png-transparent/white-phone-icon-png-transparent-3.jpg" alt="Mobile Icon" class="cmp-column--new__mobile-icon">
   </div>
-  <div class="cmp-column-contact-info">
-  <div class="cmp-column-cta-text">${model.ctaText}</div>
-  <div class="cmp-column-mobile-number">${model.phoneNumber}</div>
+  <div class="cmp-column--new__contact-info">
+  <div class="cmp-column--new__cta-text">${model.ctaText}</div>
+  <div class="cmp-column--new__mobile-number">${model.phoneNumber}</div>
   </div>
 </div>
-<button class="cmp-column-button">Request A Quote</button>
+<button class="cmp-column__button">Request A Quote</button>
 </div>
-  <div class="cmp-column-image-container">
+  <div class="cmp-column__image-container">
     <img src="${model.imageCopy}" alt="Image">
   </div>
 
