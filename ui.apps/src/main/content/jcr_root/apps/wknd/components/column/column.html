@@ -2,6 +2,8 @@
   data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Column"
   data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
   >
+  <div class="component">
+  <input type="text" placeholder="Text" class="space-holder" />
   <div class="cmp-column">
   <div class="cmp-column__content">
     <h2 class="cmp-column__title">${model.title}</h2>
@@ -11,7 +13,7 @@
     <div class="cmp-column__description">${model.description}</div>
     <div class="cmp-column__features">
       <ul class="cmp-column__ul"  data-sly-list.item="${model.feature}">
-      <li>${item}</li>
+      <li class="cmp-column-li">${item}</li>
       </ul>
     </div>
 <div class="cmp-column--new">

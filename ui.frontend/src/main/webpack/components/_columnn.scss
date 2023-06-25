@@ -35,10 +35,15 @@
       align-items: flex-start;
       background: $color-lightblue-background;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           display: inherit;
       }
+      
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        display: inherit;
+    }
     
     
     &__content {
@@ -48,13 +53,21 @@
       margin-bottom: 2.5rem; 
       text-align: start;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           margin-left: 0rem;
           padding: 1.5rem;
           margin-bottom: 0.5rem;
 
-      }}
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        margin-left: 0rem;
+        padding: 1.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+    }
     
     &__title {
       font-size: 20px;
@@ -65,12 +78,18 @@
       font-weight: bold;
 
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           font-size: 15px;
           font-weight: bold;
 
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
     }
     
     &__subtitle {
@@ -80,11 +99,17 @@
       margin-top: 0rem;
       font-family: Arial;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           font-size: 27px;
           font-weight: bold;
-          }}
+          }
+          @media (min-width: 481px) and (max-width: 1024px) {
+            width: 100%;
+            font-size: 27px;
+            font-weight: bold;
+            }
+           }
     
     &__description {
       font-size: 13px;
@@ -92,60 +117,84 @@
       color: $color-text-black;
       font-family: Arial;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           font-size: 21px;
-      }}
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        font-size: 21px;
+    }
+    }
     
     &__features {
       margin-bottom: 10px;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           column-count: 1;
-      }}
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        column-count: 1;
+    }}
     
     &__features ul {
       list-style-type: disc;
       margin-left: 20px;
       margin-left: 0px;
       padding-left: 0px;
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+    }
     }
     
     &__phone-number {
       font-size: 16px;
       margin-bottom: 10px;
       font-family: Arial;
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+    }
     }
     
     &__cta {
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+    }
     }
     
     &__cta-text {
       font-size: 16px;
       margin-right: 10px;
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
       }
     }
     
     &__cta-link {
       font-size: 16px;
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+    }
     }
     
     &__image-container {
@@ -156,20 +205,30 @@
       //padding: 5rem;
       margin-right: 7rem;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           padding: 1rem 3rem 3rem 3rem;
           margin-right: 0rem;
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 1rem 3rem 3rem 3rem;
+        margin-right: 0rem;
+    }
     }
     
     &__image-container img {
       max-width: 100%;
-      height: 31.5rem; 
-      @media only screen and (max-width: 844px) {
+      height: 31.5rem;
+
+      @media (max-width: 480px){
           width: 100%;
           height: 14rem;
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        height: 14rem;
+    }
   }
     
   &__features{
@@ -177,11 +236,18 @@
     //justify-content: space-between;
     columns: 2;
     column-gap: 20px;
-    @media only screen and (max-width: 844px) {
+
+   @media (max-width: 480px) {
       width: 100%;
       columns: 1;
 
-  }}
+  }
+  @media (min-width: 481px) and (max-width: 1024px) {
+    width: 100%;
+    columns: 1;
+
+}
+}
     
     &__features ul 
     {
@@ -198,11 +264,16 @@
       color:$color-darkblue;
       font-weight: bold;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
           font-size: 21px;
           padding-top:1rem;
           //padding-bottom: 1rem;
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+        font-size: 21px;
+        padding-top:1rem;
       }
     }
     
@@ -222,37 +293,42 @@
     }
     
     
-    ul {
+    .cmp-column__ul {
       list-style: none;
       padding: 0;
     }
     
-    ul li {
+    .cmp-column-li {
       position: relative;
       padding-left: 25px;
       margin-bottom: 26px;
       line-height: 0.5;
+      display: flex !important;
 
     }
-    
-    li {
-      display: flex !important;
-    }
-    
-    ul li::after {
+
+     li::after {
       content: "";
       position: absolute;
       top: 50%;
       left: 6px;
       transform: translateY(-50%) rotate(45deg);
-      width: 6px;
-      height: 14px;
+      width: 7px;
+      height: 13px;
       border-bottom: 3.5px solid #87CEEB;
       border-right: 3.5px solid #87CEEB;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           top: 80%;
-      }}
+          height: 14.5px;
+
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        top: 80%;
+        height: 14.5px;
+
+    }
+  }
     
     &__button {
       display: inline-block;
@@ -268,9 +344,12 @@
           background: $color-lightpink; 
       }
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+    }
     } 
     .cmp-column--new {
       display: flex;
@@ -281,16 +360,24 @@
       margin-bottom: 2rem;
       background:transparent;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 103%;
           
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 103%;
+        
+    }
     
     
     &__icon {
       margin-right: 10px;
       margin-left: -10px;
-    @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
+        margin-right: 5px;
+
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
         margin-right: 5px;
 
       }
@@ -301,9 +388,13 @@
       height: 48px;
       background: $color-skyblue;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
         // width: 100%;
           //width: 39%;
+          margin-right: 5px;
+
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
           margin-right: 5px;
 
       }
@@ -311,10 +402,14 @@
     &__contact-info {
       display: flex;
       flex-direction: column;
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           margin-top: 0px;
           
       }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        margin-top: 0px;
+        
+    }
     }
     
     &__mobile-number {
@@ -323,9 +418,13 @@
       font-family: Arial;
       color: $color-skyblue;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
-      }}
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 100%;
+    }
+   }
     
     &__cta-text {
       margin-top: 0px;
@@ -333,9 +432,13 @@
       font-weight: bold;
       font-size: 18px;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 100%;
-      }}
+      }
+      @media (min-width: 481px) and (max-width: 1024px){
+        width: 100%;
+    }
+    }
   } }
     .cmp-column hr  {
       background-color: skyblue;
@@ -346,11 +449,16 @@
       width: 65px;
       opacity: 1.25;
 
-      @media only screen and (max-width: 844px) {
+      @media (max-width: 480px) {
           width: 48%;
           margin: 7px 3px 32px 0;
           height: 4px;
       }
+      @media (min-width: 481px) and (max-width: 1024px)  {
+        width: 48%;
+        margin: 7px 3px 32px 0;
+        height: 4px;
+    }
       }
       .container{
           max-width: fit-content;
@@ -384,11 +492,11 @@
                   background: $color-link;
                   color: white;
               }
-              .cmp-column__mobile-icon{
+              .cmp-column--new__mobile-icon{
                   background: $color-link;
     
               }
-              .cmp-column__mobile-number 
+              .cmp-column--new__mobile-number 
               {
                   color: $color-link;   
               } 
@@ -423,11 +531,11 @@
                   background: $color-text-red;
                   color: white;
               }
-              .cmp-column__mobile-icon{
+              .cmp-column--new__mobile-icon{
                   background: $color-text-red;
     
               }
-              .cmp-column__mobile-number 
+              .cmp-column--new__mobile-number
               {
                   color: $color-text-red;   
               }
@@ -462,11 +570,11 @@
                   background: $color-lightgreen;
                   color: white;
               }
-              .cmp-column__mobile-icon{
+              .cmp-column--new__mobile-icon{
                   background: $color-lightgreen;
     
               }
-              .cmp-column__mobile-number 
+              .cmp-column--new__mobile-number 
               {
                   color: $color-lightgreen;   
               } 
@@ -474,4 +582,18 @@
               {
                   background-color: $color-lightgreen;}
       }
+
+      ////// style for place holder //////
     
+      .space-holder {
+        color: #999999;
+        border: white;
+        margin: 2rem;
+        text-align: center;
+        font-size: 1.5pc;
+      }
+      
+      .space-holder::placeholder {
+        font-style: italic; }
+      
+      
