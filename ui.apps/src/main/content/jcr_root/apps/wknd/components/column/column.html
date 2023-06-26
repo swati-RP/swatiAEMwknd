@@ -1,9 +1,7 @@
 <sly
   data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Column"
-  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-  >
-  <div class="component">
-  <input type="text" placeholder="Text" class="space-holder" />
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"  >
+
   <div class="cmp-column">
   <div class="cmp-column__content">
     <h2 class="cmp-column__title">${model.title}</h2>
@@ -30,7 +28,6 @@
   <div class="cmp-column__image-container">
     <img src="${model.imageCopy}" alt="Image">
   </div>
-
 </div>
 <sly data-sly-call="${templates.placeholder @ isEmpty = model.isEmpty}"></sly>
 </sly>
