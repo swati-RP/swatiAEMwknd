@@ -468,7 +468,7 @@
     ///// theme color /////
     .cmp-column--blue-color
       {
-          .cmp--column
+         .cmp-column
           {
               background: $color-text-white;}
     
@@ -482,8 +482,8 @@
                   top: 50%;
                   left: 6px;
                   transform: translateY(-50%) rotate(45deg);
-                  width: 6px;
-                  height: 14px;
+                  width: 7px;
+                  height: 13px;
                   border-bottom: 3.5px solid $color-link;
                   border-right: 3.5px solid $color-link;
               } 
@@ -521,8 +521,8 @@
                   top: 50%;
                   left: 6px;
                   transform: translateY(-50%) rotate(45deg);
-                  width: 6px;
-                  height: 14px;
+                  width: 7px;
+                  height: 13px;
                   border-bottom: 3.5px solid $color-text-red;
                   border-right: 3.5px solid $color-text-red;
               } 
@@ -560,8 +560,8 @@
                   top: 50%;
                   left: 6px;
                   transform: translateY(-50%) rotate(45deg);
-                  width: 6px;
-                  height: 14px;
+                  width: 7px;
+                  height: 13px;
                   border-bottom: 3.5px solid $color-lightgreen;
                   border-right: 3.5px solid $color-lightgreen;
               } 
@@ -582,18 +582,4 @@
               {
                   background-color: $color-lightgreen;}
       }
-
-      ////// style for place holder //////
-    
-      .space-holder {
-        color: #999999;
-        border: white;
-        margin: 2rem;
-        text-align: center;
-        font-size: 1.5pc;
-      }
-      
-      .space-holder::placeholder {
-        font-style: italic; }
-      
       
