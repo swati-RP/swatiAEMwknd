@@ -1,6 +1,8 @@
 <sly
   data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Column"
-  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"  >
+   data-sly-use.templates="core/wcm/components/commons/v1/templates.html"  
+  >
+   <sly data-sly-test="${!model.isEmpty}"> 
 
   <div class="cmp-column">
   <div class="cmp-column__content">
@@ -29,8 +31,10 @@
     <img src="${model.imageCopy}" alt="Image">
   </div>
 </div>
-<sly data-sly-call="${templates.placeholder @ isEmpty = model.isEmpty}"></sly>
 </sly>
+
+</sly>
+  <sly data-sly-call="${templates.placeholder @ isEmpty = model.isEmpty}"></sly>
 
 
 

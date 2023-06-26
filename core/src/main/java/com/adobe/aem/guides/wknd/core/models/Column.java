@@ -14,7 +14,8 @@ public interface Column {
     String getImageCopy();
     String getButton();
     String getSubtitle();
-    List<Map<String, String>> getMultiDataMap();
     boolean isEmpty();
+    List<Map<String, String>> getMultiDataMap();
+    
 }
 

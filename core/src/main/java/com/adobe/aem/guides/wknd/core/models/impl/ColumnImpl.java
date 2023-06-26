@@ -113,19 +113,17 @@ public class ColumnImpl implements Column
         return imageCopy;
     }
 
-    @Override
+        @Override
+        public boolean isEmpty() {
 
-    public boolean isEmpty() {
+            return StringUtils.isBlank(title) && StringUtils.isBlank(subtitle) && StringUtils.isBlank(description)
 
-        return StringUtils.isBlank(title) && StringUtils.isBlank(subtitle) && StringUtils.isBlank(description)
-
-                && StringUtils.isBlank(phoneNumber) && StringUtils.isBlank(ctaText)
-
-                && StringUtils.isBlank(ctaLink) && StringUtils.isBlank(imageCopy)
-
-                && StringUtils.isBlank(button)
-
-                && StringUtils.isBlank((CharSequence) featureResource);
+                    && StringUtils.isBlank(phoneNumber) 
+                    && StringUtils.isBlank(ctaText)
+                    && StringUtils.isBlank(ctaLink) 
+                    && StringUtils.isBlank(imageCopy)
+                    && StringUtils.isBlank(button)
+                    && StringUtils.isBlank((CharSequence) featureResource);
 
     }
 
