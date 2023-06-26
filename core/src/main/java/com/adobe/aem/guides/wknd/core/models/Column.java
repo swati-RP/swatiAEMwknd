@@ -15,5 +15,6 @@ public interface Column {
     String getButton();
     String getSubtitle();
     List<Map<String, String>> getMultiDataMap();
+    boolean isEmpty();
 }
 
