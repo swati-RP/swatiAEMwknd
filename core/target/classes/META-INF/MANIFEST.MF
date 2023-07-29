@@ -46,13 +46,14 @@ Service-Component: OSGI-INF/com.adobe.aem.guides.wknd.core.filters.Log
 Sling-Model-Classes: com.adobe.aem.guides.wknd.core.models.HelloWorldM
  odel,com.adobe.aem.guides.wknd.core.models.impl.AuthorBooksImpl,com.a
  dobe.aem.guides.wknd.core.models.impl.AuthorImpl,com.adobe.aem.guides
- .wknd.core.models.impl.HeroCarousel2Impl,com.adobe.aem.guides.wknd.co
- re.models.impl.HomepageHeroImpl,com.adobe.aem.guides.wknd.core.models
- .impl.MultiComponentImpl,com.adobe.aem.guides.wknd.core.models.impl.M
- ultitabImpl,com.adobe.aem.guides.wknd.core.models.impl.Publication1Im
- pl,com.adobe.aem.guides.wknd.core.models.impl.Publication2Impl,com.ad
- obe.aem.guides.wknd.core.models.impl.PublicationImpl,com.adobe.aem.gu
- ides.wknd.core.models.impl.StudentCardImpl,com.adobe.aem.guides.wknd.
- core.models.impl.TextImageImpl,com.adobe.aem.guides.wknd.core.models.
- impl.VerticalSliderImpl
+ .wknd.core.models.impl.ColumnImpl,com.adobe.aem.guides.wknd.core.mode
+ ls.impl.HeroCarousel2Impl,com.adobe.aem.guides.wknd.core.models.impl.
+ HomepageHeroImpl,com.adobe.aem.guides.wknd.core.models.impl.MultiComp
+ onentImpl,com.adobe.aem.guides.wknd.core.models.impl.MultitabImpl,com
+ .adobe.aem.guides.wknd.core.models.impl.Publication1Impl,com.adobe.ae
+ m.guides.wknd.core.models.impl.Publication2Impl,com.adobe.aem.guides.
+ wknd.core.models.impl.PublicationImpl,com.adobe.aem.guides.wknd.core.
+ models.impl.StudentCardImpl,com.adobe.aem.guides.wknd.core.models.imp
+ l.TextImageImpl,com.adobe.aem.guides.wknd.core.models.impl.VerticalSl
+ iderImpl
 

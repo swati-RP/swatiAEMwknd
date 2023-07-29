@@ -37,7 +37,7 @@ public final class label__002e__html extends RenderUnit {
 Object _dynamic_properties = bindings.get("properties");
 out.write("<p>");
 {
-    String var_0 = ("\n\n\n" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "label"), "text")));
+    String var_0 = ("\r\n\r\n\r\n" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "label"), "text")));
     out.write(renderContext.getObjectModel().toString(var_0));
 }
 out.write("</p>");

@@ -34,7 +34,7 @@ public final class testcomp__002e__html extends RenderUnit {
                                 RenderContext renderContext) {
 // Main Template Body -----------------------------------------------------------------------------
 
-out.write("<div class=\"cmp-title\">\n\n<h1 class=\"cmp-title__text\">$(properties.description)</h1>\n\n\n\n</div>\n\n");
+out.write("<div class=\"cmp-title\">\r\n\r\n<h1 class=\"cmp-title__text\">$(properties.description)</h1>\r\n\r\n\r\n\r\n</div>\r\n\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

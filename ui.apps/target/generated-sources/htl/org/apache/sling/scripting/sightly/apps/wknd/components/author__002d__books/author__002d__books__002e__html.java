@@ -37,14 +37,14 @@ public final class author__002d__books__002e__html extends RenderUnit {
 Object _global_model = null;
 Collection var_collectionvar1_list_coerced$ = null;
 Collection var_collectionvar14_list_coerced$ = null;
-out.write("<h1>AUTHORS OF THE BOOKS</h1>\n");
+out.write("<h1>AUTHORS OF THE BOOKS</h1>\r\n");
 _global_model = renderContext.call("use", com.adobe.aem.guides.wknd.core.models.AuthorBooks.class.getName(), obj());
-out.write("<div></div>\n<div>");
+out.write("<div></div>\r\n<div>");
 {
     String var_0 = ("Author Name:" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "authorName"), "text")));
     out.write(renderContext.getObjectModel().toString(var_0));
 }
-out.write("</div>\n");
+out.write("</div>\r\n");
 {
     Object var_collectionvar1 = renderContext.getObjectModel().resolveProperty(_global_model, "authorBooks");
     {
@@ -69,7 +69,7 @@ out.write("</div>\n");
                                         boolean var_traversal10 = (((var_index8 >= 0) && (var_index8 <= var_end6)) && true);
                                         if (var_traversal10) {
                                             {
-                                                String var_11 = (("\n  BOOK Number:" + renderContext.getObjectModel().toString(renderContext.call("xss", itemlist_field$_count, "text"))) + "\n  ");
+                                                String var_11 = (("\r\n  BOOK Number:" + renderContext.getObjectModel().toString(renderContext.call("xss", itemlist_field$_count, "text"))) + "\r\n  ");
                                                 out.write(renderContext.getObjectModel().toString(var_11));
                                             }
                                             out.write("<p>Name Of BOOK : <b>");
@@ -77,7 +77,7 @@ out.write("</div>\n");
                                                 Object var_12 = renderContext.call("xss", item, "text");
                                                 out.write(renderContext.getObjectModel().toString(var_12));
                                             }
-                                            out.write("</b></p>\n");
+                                            out.write("</b></p>\r\n");
                                         }
                                     }
                                 }
@@ -92,12 +92,12 @@ out.write("</div>\n");
     }
     var_collectionvar1_list_coerced$ = null;
 }
-out.write("\n<p>ALL Book : <b>");
+out.write("\r\n<p>ALL Book : <b>");
 {
     Object var_13 = renderContext.call("xss", renderContext.call("join", renderContext.getObjectModel().resolveProperty(_global_model, "authorBooks"), ", "), "text");
     out.write(renderContext.getObjectModel().toString(var_13));
 }
-out.write("</b></p>\n");
+out.write("</b></p>\r\n");
 {
     Object var_collectionvar14 = renderContext.getObjectModel().resolveProperty(_global_model, "bookDetailsWithMap");
     {
@@ -122,7 +122,7 @@ out.write("</b></p>\n");
                                         boolean var_traversal23 = (((var_index21 >= 0) && (var_index21 <= var_end19)) && true);
                                         if (var_traversal23) {
                                             {
-                                                String var_24 = (("\n  Book : " + renderContext.getObjectModel().toString(renderContext.call("xss", itemlist_field$_count, "text"))) + "\n  ");
+                                                String var_24 = (("\r\n  Book : " + renderContext.getObjectModel().toString(renderContext.call("xss", itemlist_field$_count, "text"))) + "\r\n  ");
                                                 out.write(renderContext.getObjectModel().toString(var_24));
                                             }
                                             out.write("<p>Book : <b>");
@@ -130,17 +130,17 @@ out.write("</b></p>\n");
                                                 String var_25 = (renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(item, "book"), "text")) + " ");
                                                 out.write(renderContext.getObjectModel().toString(var_25));
                                             }
-                                            out.write("</b></p>\n  <p>Subject : <b>");
+                                            out.write("</b></p>\r\n  <p>Subject : <b>");
                                             {
                                                 Object var_26 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(item, "subject"), "text");
                                                 out.write(renderContext.getObjectModel().toString(var_26));
                                             }
-                                            out.write("</b></p>\n  <p>Publish : <b>");
+                                            out.write("</b></p>\r\n  <p>Publish : <b>");
                                             {
                                                 Object var_27 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(item, "published"), "text");
                                                 out.write(renderContext.getObjectModel().toString(var_27));
                                             }
-                                            out.write("</b></p>\n");
+                                            out.write("</b></p>\r\n");
                                         }
                                     }
                                 }
@@ -155,7 +155,7 @@ out.write("</b></p>\n");
     }
     var_collectionvar14_list_coerced$ = null;
 }
-out.write("\n");
+out.write("\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------
